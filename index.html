@@ -40,12 +40,60 @@
             <li class="contacts-item"><a class="contacts-link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
         </ul>
     </address>
+     <button class="burger-button" type="button" data-menu-open>
+          <svg class="burger-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-heroicons"></use>
+          </svg>
+        </button>
+        <div class="mobile-menu">
+         <div class="container mobile-menu-container"></div>
+         <button class="mobile-menu-close">Close</button>
+         <nav class="burger-nav">
+            <a class="burger-link" href="Studio">Studio</a>
+            <a class="burger-link" href="Portfolio">Portfolio</a>
+            <a class="burger-link" href="Contacts">Contacts</a>
+         </nav>
+         <div class="burger-contacts">
+            <a class="burger-contacts-items" href="tel:+110001111111">+11 (000) 111-11-11</a>
+            <a class="burger-contacts-items" href="mailto:info@devstudio.com">info@devstudio.com</a>
+         </div>
+        <Ul class="burger-list">
+                    <li class="burger-social">
+                       <a href="#" target="_blank" class="burger-socials-link"> 
+                     <svg class="burger-icon" width="24" height="24">
+                          <use href="./images/icons.svg#icon-instagram"></use>
+                        </svg>
+                        </a>        
+                    </li>
+                    <li class="burger-social">
+                        <a href="#" target="_blank" class="burger-socials-link">
+                     <svg class="burger-icon" width="24" height="24">
+                          <use href="./images/icons.svg#icon-twitter"></use>
+                        </svg>
+                        </a>        
+                    </li>
+                    <li class="burger-social">
+                        <a href="#" target="_blank" class="burger-socials-link">
+                     <svg class="burger-icon" width="24" height="24">
+                          <use href="./images/icons.svg#icon-facebook"></use>
+                        </svg> 
+                        </a>       
+                    </li>
+                    <li class="burger-social">
+                        <a href="#" target="_blank" class="burger-socials-link">
+                     <svg class="burger-icon" width="24" height="24">
+                          <use href="./images/icons.svg#icon-linkedin"></use>
+                        </svg>
+                        </a>        
+                    </li>
+                    </Ul>
+        </div>
     </div>
    </header>
 <!-- #endregion header -->
   <main>  
 <!-- #region hero image -->  
-    <section class="section-hero">
+    <section class="section-hero ">
      <div class=" container hero-container">   
         <h1 class="hero-title">Effective Solutions for Your Business</h1>     
         <button class="button">Order Service</button>
@@ -122,7 +170,8 @@
                 <ul class="team-list">   
                     <li class="team-item">
                         <img 
-                            src="./images/markguerrero.jpg" 
+                            src="./images/markguerrero.jpg"
+                            srcset="./images/markguerrero.jpg 1x, ./images/MarkGuerrero2.jpg 2x"
                             alt="Mark Guerrero"
                             height="260"
                             width="264"
@@ -165,7 +214,8 @@
                     </li>
                     <li class="team-item">
                         <img 
-                            src="./images/tomford.jpg" 
+                            src="./images/tomford.jpg"
+                            srcset="./images/tomford.jpg 1x, ./images/TomFord2.jpg 2x" 
                             alt="Tom Ford"
                             height="260"
                             width="264"  
@@ -208,7 +258,8 @@
                     </li>
                     <li class="team-item">
                         <img 
-                            src="./images/camilagarcia.jpg" 
+                            src="./images/camilagarcia.jpg"
+                            srcset="./images/camilagarcia.jpg 1x, ./images/CamilaGarcia2.jpg 2x"
                             alt="Camila Garcia"
                             height="260"
                             width="264" 
@@ -252,6 +303,7 @@
                     <li class="team-item">
                         <img 
                             src="./images/danielwilson.jpg" 
+                            srcset="./images/danielwilson.jpg 1x, ./images/DanielWilson2.jpg 2x" 
                             alt="Daniel Wilson"
                             height="260"
                             width="264" 
@@ -307,7 +359,8 @@
                     <li class="portfolio-item">
         <div class="portfolio-item-images-container">
                     <img 
-                            src="./images/bankingapp.jpg" 
+                            src="./images/bankingapp.jpg"
+                            srcset="./images/bankingapp.jpg 1x, ./images/bankingapp2.jpg 2x"
                             alt="BankingApp"
                             height="300"
                             width="360" 
@@ -329,6 +382,7 @@
         <div class="portfolio-item-images-container">               
                      <img 
                             src="./images/cashlesspayment.jpg" 
+                            srcset="./images/cashlesspayment.jpg 1x, ./images/cashlesspayment2.jpg 2x"
                             alt="Cashless Payment"
                             height="300"
                             width="360" 
@@ -349,7 +403,8 @@
                     <li class="portfolio-item" >
         <div class="portfolio-item-images-container">                 
                      <img 
-                            src="./images/meditationapp.jpg" 
+                            src="./images/meditationapp.jpg"
+                            srcset="./images/meditationapp.jpg 1x, ./images/meditationapp2.jpg 2x"
                             alt="Meditation App"
                             height="300"
                             width="360" 
@@ -371,6 +426,7 @@
         <div class="portfolio-item-images-container">                 
                      <img 
                             src="./images/taxiservice.jpg" 
+                            srcset="./images/taxiservice.jpg 1x, ./images/taxiservice2.jpg 2x"
                             alt="Taxi Service"
                             height="300"
                             width="360" 
@@ -391,7 +447,8 @@
                     <li class="portfolio-item">
         <div class="portfolio-item-images-container">                 
                       <img 
-                            src="./images/screenillustrations.jpg" 
+                            src="./images/screenillustrations.jpg"
+                            srcset="./images/screenillustrations.jpg 1x, ./images/screenillustrations2.jpg 2x"
                             alt="Screen Illustrations"
                             height="300"
                             width="360" 
@@ -412,7 +469,8 @@
                     <li class="portfolio-item">
         <div class="portfolio-item-images-container">                 
                      <img 
-                            src="./images/onlinecourses.jpg" 
+                            src="./images/onlinecourses.jpg"
+                             srcset="./images/onlinecourses.jpg 1x, ./images/onlinecourses2.jpg 2x"
                             alt="Online Courses"
                             height="300"
                             width="360" 
