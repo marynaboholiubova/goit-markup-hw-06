@@ -137,6 +137,14 @@ border: 1px solid rgba(0, 0, 0, 0.1);
   margin-bottom: 168px;
   margin-left: 16px;
 }
+.studio{
+font-weight: 700;
+font-size: 36px;
+line-height: 1.11;
+letter-spacing: 0.02em;  
+color: #404bbf;
+}
+
 .burger-link{
 font-weight: 700;
 font-size: 36px;
@@ -144,16 +152,20 @@ line-height: 1.11;
 letter-spacing: 0.02em;
 color: #2e2f42;  
 }
-.burger-link:hover,
-.burger-link:focus{
- color: #404bbf; 
-}
+
 .burger-contacts{
 display: flex;
 margin-left: 16px;
 margin-bottom: 48px;
 flex-direction: column;
 gap: 24px;
+}
+.telephone{
+font-weight: 500;
+font-size: 20px;
+line-height: 1.2;
+letter-spacing: 0.02em;
+color: #404bbf;  
 }
 .burger-contacts-items{
 font-weight: 500;
@@ -162,10 +174,7 @@ line-height: 1.2;
 letter-spacing: 0.02em;
 color: #434455;
 }
-.burger-contacts-items:hover,
-.burger-contacts-items:focus{
-color: #4d5ae5; 
-}
+
 .burger-list{
 display: flex;
 flex-direction: row;
@@ -351,13 +360,14 @@ padding-bottom: 72px;
 background-image: url(./images/people-officemob1x.jpg);
 background-image: linear-gradient(rgba(46, 47, 66, 0.7), 
  rgba(46, 47, 66, 0.7)), url(../images/people-officemob1x.jpg);
+background-image: 
 background-repeat: no-repeat;
 background-position: center; 
 background-size: cover;
 }
 @media screen and (min-resolution: 192dpipx) {
 .section-hero{
-  background-image: url(./images/people-officemob2x.jpg);
+background-image: url(./images/people-officemob2x.jpg);
 background-image: linear-gradient(rgba(46, 47, 66, 0.7), 
  rgba(46, 47, 66, 0.7)), url(../images/people-officemob2x.jpg);
 }
@@ -513,8 +523,6 @@ font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: #434455;
-margin-left: 16px;
-margin-right: 16px;
 }
 
 
@@ -568,6 +576,7 @@ width: calc((100% - 72px) / 4);
 display: flex;
 align-items: center;
 justify-content: center;
+background-color: #f4f4fd;
 height: 112px;
 border-radius: 4px;
 border: 1px solid #8e8f99;
@@ -605,7 +614,9 @@ margin-bottom: 72px;
 .team-list {
 display: flex;
 flex-wrap: wrap;
-gap: 72px;  
+gap: 72px;
+align-items: center;  
+justify-content: center;
 }
 .team-item-title{
 font-weight: 700;
@@ -676,6 +687,7 @@ background-color: #404bbf;
 display: flex; 
 row-gap: 72px;
 column-gap: 24px;
+justify-content: center;
 }
 }
 
@@ -691,10 +703,8 @@ gap: 24px;
 }  
 .team-item{
 width: calc((100% - 72px) / 4);
-box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-  0px 1px 1px rgba(46, 47, 66, 0.16), 
-  0px 2px 1px rgba(46, 47, 66, 0.08);  
-} 
+}
+   
 .team-item-title{
 font-weight: 500;
 font-size: 20px;
@@ -775,12 +785,14 @@ color: #434455;
 .portfolio-list{
 display: flex;
 flex-wrap: wrap; 
-gap: 24px 64px;
-
+gap: 72px 24px;
+flex-direction: row;
 }
 .portfolio-item{
  width: calc((100% - 24px) / 2);
+
 }
+
 }
 
 @media screen and (min-width: 1158px) {
@@ -796,12 +808,13 @@ row-gap: 48px;
 }
 .portfolio-item{
  width: calc((100% - 48px) / 3);
+ box-shadow: none;
 }
 .portfolio-item:hover{
 box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 
 0px 1px 1px rgba(46, 47, 66, 0.16), 
 0px 2px 1px rgba(46, 47, 66, 0.08);
-  transform: translateY(0%); 
+transform: translateY(0%);   
 }
 }
 
@@ -829,6 +842,8 @@ gap: 72px;
   letter-spacing: 0.03em;
   display: inline-block;
   margin-bottom: 16px;
+  display: flex;
+  justify-content: center;
 }
 .logo-part{
 color: #f4f4fd;  
@@ -848,6 +863,7 @@ line-height: 1.5;
 letter-spacing: 0.02em;
 color:#FFFFFF;
 margin-bottom: 16px;
+display: flex;
 justify-content: center; 
 }
 .social-list-icon{
@@ -880,6 +896,8 @@ fill:#f4f4fd;
 position: relative; 
 }
 .footer-subscribe{
+display: flex;
+justify-content: center;
 margin-bottom: 16px;
 font-weight: 500;  
 font-size: 16px;
@@ -909,7 +927,9 @@ color: #ffffff;
 }
 .button-subscribe{
 font-family: "Roboto", sans-serif;
-display: flex;
+display: block;
+margin-right: auto;
+margin-left: auto;
 font-size: 16px;
 font-weight: 500;
 line-height: 1.5;
@@ -947,9 +967,7 @@ gap: 24px;
 .footer-label-field{
 width: 264px;
 }
-.button-subscribe{
 
-}
 }
 @media screen and (min-width: 1158px) {
 .page-footer{
@@ -958,6 +976,7 @@ padding-bottom: 100px;
 }
 .footer-container{
 align-items: baseline;
+padding: 0 15px;
 }
 .container-logo{
  margin-right: 120px; 
